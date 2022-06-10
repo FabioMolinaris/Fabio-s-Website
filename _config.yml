@@ -1,3 +1,8 @@
+title: [Fabio's Website]
+description: [A short description of your site's purpose]
+show_downloads: [false]
+google_analytics: [Your Google Analytics tracking ID]
+
 collections:
   authors:
     output: true
@@ -18,10 +23,11 @@ defaults:
     values:
       layout: "default"
   
+remote_theme: pages-themes/minimal
+
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-include-cache
-
-theme: minimal-mistakes-jekyll
+  - jekyll-remote-theme
